@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallary</h1>
+    </header>
+  <div class="gallery">
+    <div class="gallery-item"><img src="photo1.jpg" alt="Image 1" onclick="openModal(this)"></div>
+    <div class="gallery-item"><img src="photo2.jpg" alt="Image 2" onclick="openModal(this)"></div>
+    <div class="gallery-item"><img src="photo3.jpg" alt="Image 3" onclick="openModal(this)"></div>
+    <div class="gallery-item"><img src="photo4.jpg" alt="Image 3" onclick="openModal(this)"></div>
+    <div class="gallery-item"><img src="photo5.jpg" alt="Image 3" onclick="openModal(this)"></div>
+    <div class="gallery-item"><img src="photo6.jpg" alt="Image 3" onclick="openModal(this)"></div>
+    <div class="gallery-item"><img src="photo7.jpg" alt="Image 3" onclick="openModal(this)"></div>
+    <div class="gallery-item"><img src="photo8.jpg" alt="Image 3" onclick="openModal(this)"></div>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
